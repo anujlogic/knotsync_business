@@ -51,16 +51,16 @@ const _nav = [
     to: '/base',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
     items: [
-      {
-        component: CNavItem,
-        name: 'Accordion',
-        to: '/base/accordion',
-      },
-      {
-        component: CNavItem,
-        name: 'Breadcrumb',
-        to: '/base/breadcrumbs',
-      },
+      // {
+      //   component: CNavItem,
+      //   name: 'Accordion',
+      //   to: '/base/accordion',
+      // },
+      // {
+      //   component: CNavItem,
+      //   name: 'Breadcrumb',
+      //   to: '/base/breadcrumbs',
+      // },
       {
         component: CNavItem,
         name: 'Cards',
