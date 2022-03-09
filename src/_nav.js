@@ -27,19 +27,206 @@ const _nav = [
   },
   {
     component: CNavTitle,
-    name: 'Theme',
+    name: 'Web Development',
   },
   {
-    component: CNavItem,
-    name: 'Colors',
-    to: '/theme/colors',
-    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+    component: CNavGroup,
+    name: 'PHP Framework',
+    to: '/php',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Laravel',
+        to: '/php/laravel',
+      },
+      {
+        component: CNavItem,
+        name: 'Codelgniter',
+        to: '/php/codelgniter',
+      },
+      {
+        component: CNavItem,
+        name: 'Cake PHP',
+        to: '/php/cakephp',
+      },
+      {
+        component: CNavItem,
+        name: 'Yii 2',
+        to: '/php/yii2',
+      },
+    ],
   },
   {
-    component: CNavItem,
-    name: 'Typography',
-    to: '/theme/typography',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+    component: CNavGroup,
+    name: 'PHP CMS',
+    to: '/php',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Wordpress',
+        to: '/php/wordpress',
+      },
+      {
+        component: CNavItem,
+        name: 'Shopify',
+        to: '/php/shopify',
+      },
+      {
+        component: CNavItem,
+        name: 'Grav',
+        to: '/base/breadcrumbs',
+      },
+    ],
+  },
+  {
+    component: CNavTitle,
+    name: 'Frontend Development',
+  },
+  {
+    component: CNavGroup,
+    name: 'JS Framework',
+    to: '/base',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Reactjs',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'Anguler Js',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'Vue Js',
+        to: '/base/breadcrumbs',
+      },
+    ],
+  },
+  {
+    component: CNavTitle,
+    name: 'Web Designes',
+  },
+  {
+    component: CNavGroup,
+    name: 'Web Designer',
+    to: '/design',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'UI Design',
+        to: '/design/ui',
+      },
+      {
+        component: CNavItem,
+        name: 'UX Design',
+        to: '/design/ux',
+      },
+      {
+        component: CNavItem,
+        name: 'Website Design',
+        to: '/design/webdesign',
+      },
+      {
+        component: CNavItem,
+        name: 'Branding/Logo Design',
+        to: '/design/brandlogo',
+      },
+      {
+        component: CNavItem,
+        name: 'Brochure Design',
+        to: '/design/brochure',
+      },
+    ],
+  },
+  {
+    component: CNavTitle,
+    name: 'Search Engine Optimize',
+  },
+  {
+    component: CNavGroup,
+    name: 'SEO',
+    to: '/base',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'On-page SEO',
+        to: '/base/accordion',
+      },
+      {
+        component: CNavItem,
+        name: 'Off-page SEO',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'Technical SEO',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'Local SEO',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'App store optimization',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: ' YouTube SEO',
+        to: '/base/breadcrumbs',
+      },
+    ],
+  },
+  {
+    component: CNavTitle,
+    name: 'Content Writer',
+  },
+  {
+    component: CNavGroup,
+    name: 'Content Writer',
+    to: '/base',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Blog Writer',
+        to: '/base/accordion',
+      },
+      {
+        component: CNavItem,
+        name: 'Social Media',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'Email Writer',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'Script Writer',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'Long-Form Writer',
+        to: '/base/breadcrumbs',
+      },
+      {
+        component: CNavItem,
+        name: 'Ad and Promo Writer',
+        to: '/base/breadcrumbs',
+      },
+    ],
   },
   {
     component: CNavTitle,

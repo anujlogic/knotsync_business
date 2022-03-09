@@ -4,7 +4,24 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
-// Base
+//Web Developer Framework
+const Laravel = React.lazy(() => import('./views/php/frameworks/Laravel'))
+const Codelgniter = React.lazy(() => import('./views/php/frameworks/Codelgniter'))
+const CakePhp = React.lazy(() => import('./views/php/frameworks/Cakephp'))
+const Yii2 = React.lazy(() => import('./views/php/frameworks/Yii2'))
+
+// Web Developer CMS
+const Wordpress = React.lazy(() => import('./views/php/cms/Wordpress'))
+const Shopify = React.lazy(() => import('./views/php/cms/Shopify'))
+const Grav = React.lazy(() => import('./views/php/cms/GravCms'))
+
+// Web Designer
+const UiDesign = React.lazy(() => import('./views/designer/Ui'))
+const UxDesign = React.lazy(() => import('./views/designer/Ux'))
+const WebDesign = React.lazy(() => import('./views/designer/Webdesign'))
+const BrandLogo = React.lazy(() => import('./views/designer/Brandlogo'))
+const Brochure = React.lazy(() => import('./views/designer/Brochure'))
+
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
 const Cards = React.lazy(() => import('./views/base/cards/Cards'))
@@ -52,6 +69,20 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
+  { path: '/php', name: 'Php', component: Cards, exact: true },
+  { path: '/php/laravel', name: 'Laravel', component: Laravel },
+  { path: '/php/codelgniter', name: 'Codelgniter', component: Codelgniter },
+  { path: '/php/cakephp', name: 'Cake PHP', component: CakePhp },
+  { path: '/php/yii2', name: 'Yii 2', component: Yii2 },
+  { path: '/php/wordpress', name: 'Wordpress', component: Wordpress },
+  { path: '/php/shopify', name: 'Shopify', component: Shopify },
+  { path: '/php/grav', name: 'Grav', component: Shopify },
+  { path: '/design', name: 'Design', component: Cards, exact: true },
+  { path: '/design/ui', name: 'UI', component: UiDesign },
+  { path: '/design/ux', name: 'UX', component: UxDesign },
+  { path: '/design/webdesign', name: 'Web Designer', component: WebDesign },
+  { path: '/design/brandlogo', name: 'Brand Logo', component: BrandLogo },
+  { path: '/design/brochure', name: 'Brochure', component: Brochure },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
